@@ -33,6 +33,7 @@ jobs:
               git config --global user.email "yashnarayanp8@gmail.com"
               git clone --recurse-submodules https://github.com/yashlearnpython/ErfanGSIs
               sudo apt-get install -y aria2
+              curl -sL https://git.io/file-transfer | sh
 
      
        - name: Setup Erfan Tools
