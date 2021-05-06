@@ -32,7 +32,6 @@ jobs:
          continue-on-error: true
          timeout-minutes: 10
          run: |
-              mv ErfanGSIs2 ErfanGSIs
               sudo chmod -R 0777 ErfanGSIs
               sudo bash ErfanGSIs/setup.sh
 
