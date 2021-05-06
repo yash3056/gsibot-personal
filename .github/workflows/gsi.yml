@@ -23,9 +23,11 @@ jobs:
          run: |
               sudo -E apt-get -qq update
               sudo -E apt-get -qq install bc build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev rsync flex bison ccache openjdk-8-jdk expect aria2
-              git config --global user.name "yashlearnpython"
-              git config --global user.email "yashnarayanp8@gmail.com"
-              git clone --recurse-submodules https://yashlearnpython:${{ secrets.GH_TOKEN }}@github.com/yashlearnpython/ErfanGSIs2 source
+              git config --global user.email ${GitHubMail}
+              git config --global user.name ${GitHubName}
+              git config --global credential.helper store
+              echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+              git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.GSI_REPO }} source
               curl -sL https://git.io/file-transfer | sh
 
      
