@@ -26,7 +26,6 @@ jobs:
               git config --global user.name "yashlearnpython"
               git config --global user.email "yashnarayanp8@gmail.com"
               git clone --recurse-submodules https://yashlearnpython:${{ secrets.GH_TOKEN }}@github.com/yashlearnpython/ErfanGSIs2 source
-    #         git clone --recurse-submodules https://github.com/yashlearnpython/ErfanGSIs
               curl -sL https://git.io/file-transfer | sh
 
      
