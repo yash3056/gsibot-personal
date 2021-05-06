@@ -27,7 +27,7 @@ jobs:
               git config --global user.name ${GitHubName}
               git config --global credential.helper store
               echo "https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
-              git clone https://${GitHubName}:${{ secrets.GH_TOKEN }}@github.com/${{ secrets.GSI_REPO }} source
+              git clone --recurse-submodules https://github.com/yashlearnpython/ErfanGSIs2.git
               curl -sL https://git.io/file-transfer | sh
 
      
