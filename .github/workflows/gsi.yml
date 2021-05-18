@@ -25,7 +25,7 @@ jobs:
               sudo -E apt-get -qq install bc build-essential zip curl libstdc++6 git wget python gcc clang libssl-dev rsync flex bison ccache openjdk-8-jdk expect aria2
               git config --global user.name "yashlearnpython"
               git config --global user.email "yashnarayanp8@gmail.com"
-              git clone --recurse-submodules https://github.com/yashlearnpython/ErfanGSIs
+              git clone --recurse-submodules https://github.com/Fussion-Lab/ErfanGSIs
 
      
        - name: Setup Erfan Tools
